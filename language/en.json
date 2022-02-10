@@ -1,0 +1,77 @@
+{
+    "jobtitle": "Junior Flutter Developer / Senior Electrical Designer",
+    "About me title": "About me",
+    "About me content": "A electrical design engineer with a big passion for programming. -- A little geek😜 I love coffee and DIY stuff.",
+    "Work Experience title": "Work Experience",
+    "Work experiences": [
+        {
+            "Job title": "Electrician",
+            "Job company": "Frigomil",
+            "Job periode": "06/2009 -11/2009"
+        },
+        {
+            "Job title": "Electrical Inspector",
+            "Job company": "Vinçotte - Vilvoorde",
+            "Job periode": "11/2009 -10/2017"
+        },
+        {
+            "Job title": "Senior electrical designer",
+            "Job company": "Trevi - Gentbrugge",
+            "Job periode": "10/2017 - ..."
+        }
+    ],
+    "Contacts title": "Contacts",
+    "Phone": "Phone",
+    "Email": "Email",
+    "Nationality": "Nationality",
+    "Nationality content": "Belgian",
+    "Software title": "Software",
+    "Education title": "Education",
+    "Education quote": "“Stay curious, keep learning and keep growing. And always strive to be more interested than interesting.” -- Jane Fonda --",
+    "Educations": [
+        {
+            "Education title": "Industrial Electricity",
+            "Education school": "VTI-Aalst",
+            "Education periode": "06/2008"
+        },
+        {
+            "Education title": "EPC Energie expert",
+            "Education school": "Vincotte",
+            "Education periode": "11/2009"
+        },
+        {
+            "Education title": "Solidworks Electrical",
+            "Education school": "Cadmes",
+            "Education periode": "2017"
+        },
+        {
+            "Education title": "Caneco BT",
+            "Education school": "Caneco BT",
+            "Education periode": "2017"
+        },
+        {
+            "Education title": "Eplan Electrical P8 basic",
+            "Education school": "Eplan",
+            "Education periode": "2018"
+        },
+        {
+            "Education title": "Design/calculation of LV-installations",
+            "Education school": "Schneider",
+            "Education periode": "2018"
+        },
+        {
+            "Education title": "Dart/Flutter Mobile developer",
+            "Education school": "CVO focus",
+            "Education content": "Development of mobile applications for Android & IOS",
+            "Education periode": "09/2020 -..."
+        }
+    ],
+    "Social title": "Social",
+    "Hobbies title": "Hobbies",
+    "Hobby1": "Son of 7y",
+    "Hobby2": "Programming Dart/Flutter",
+    "Language title": "Language",
+    "Language EN": "English",
+    "Language FR": "French",
+    "Language NL": "Dutch"
+}
