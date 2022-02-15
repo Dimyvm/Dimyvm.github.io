@@ -7,16 +7,21 @@
     <title>CV Dimitry Van Mulders</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./multiLanguage.js" >
+        window.onload = function () { getLanguage();} 
+    </script>
 
-</head>
-<body>
+</head >
+<body onload = "getLanguage()">
+<!-- <body> -->
     <!-- Floating Action Button -->
     <input type="checkbox">
     <div class="fab bounce-in-top"> + </div>
     <div class="fac">
-        <img class= "language-icon" src="https://cdn-icons-png.flaticon.com/512/299/299448.png">
-        <img class= "language-icon" src="https://cdn-icons-png.flaticon.com/512/299/299490.png">
-        <img class= "language-icon" src="https://cdn-icons-png.flaticon.com/512/299/299425.png">
+        <img class= "language-icon" onclick="setLanguage('nl')" src="https://cdn-icons-png.flaticon.com/512/299/299448.png">
+        <img class= "language-icon" onclick="setLanguage('fr')" src="https://cdn-icons-png.flaticon.com/512/299/299490.png">
+        <img class= "language-icon" onclick="setLanguage('en')" src="https://cdn-icons-png.flaticon.com/512/299/299425.png">
       </div>
     <!-- Page One -->
     <page size="A4">
