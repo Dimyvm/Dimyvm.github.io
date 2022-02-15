@@ -10,7 +10,7 @@ function getLanguage() {
         var lang = localStorage.getItem("language");
         var doc = json;
         if (doc != null) {
-          console.log(doc[lang].toString);
+          console.log(doc[0].[lang].toString);
             alert('Data is loaded ! -> console');
         }
     });
