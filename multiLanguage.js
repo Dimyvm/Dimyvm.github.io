@@ -3,14 +3,13 @@
 var language;
 function getLanguage() {
     console.log('loading language data..');
-    $.getJSON("languages.json", function (json) {
+    $.getJSON("languages.json", {format: "json"}, function (json) {
     
         (localStorage.getItem('language') == null) ? setLanguage('en') : false;
 
         var lang = localStorage.getItem("language");
         var doc = json;
         if (doc != null) {
-          doc =  $.parseJSON(doc) ;
           console.log(doc[0].lang);
             alert('Data is loaded ! -> console');
         }
