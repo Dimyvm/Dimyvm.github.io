@@ -10,7 +10,8 @@ function getLanguage() {
         var lang = localStorage.getItem("language");
         var doc = json;
         if (doc != null) {
-            alert('Data is loaded !' + 'Taal:' + doc['en']);
+           var test = `Data is loaded !' + 'Taal: ${doc[lang]}`;
+            alert(`${test}`);
         }
     });
 }
