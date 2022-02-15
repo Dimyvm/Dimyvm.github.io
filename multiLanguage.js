@@ -12,7 +12,7 @@ function getLanguage() {
         if (doc != null) {
           console.log(doc[lang]);
           console.log(doc[lang]['About me title']);
-          document.getElementById("About me title").value = doc[lang]["About me title"];
+          document.getElementById("About me title").value = doc[lang]['About me title'];
             alert('Data is loaded ! -> console');
         }
         else{
