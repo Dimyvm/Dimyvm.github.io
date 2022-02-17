@@ -13,9 +13,10 @@ function getLanguage() {
          var selectedLanguage = doc[lang];
             Object.keys(selectedLanguage ).forEach(function(key) {
                 console.log( selectedLanguage[key]);
+                document.getElementById(key).textContent = selectedLanguage[key];
             });
           
-          document.getElementById("About me title").textContent = doc[lang]["About me title"];
+//           document.getElementById("About me title").textContent = doc[lang]["About me title"];
         
         }
         else{
