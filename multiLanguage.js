@@ -3,7 +3,7 @@ var resevedJsondata;
 
 function getLanguage() {
     $.getJSON("languages.json", {format: "json"}, function (jsondata) {
-        (localStorage.getItem('language') == null) ? localStorage.setItem('language', 'en') : false;
+        (localStorage.getItem('language') == null) ? (localStorage.setItem('language', 'en')) : false;
 
         if (jsondata != null) {
             resevedJsondata = jsondata;
@@ -26,6 +26,6 @@ function pushJsonToHtml(){
     var selectedLanguageData = resevedJsondata[lang];
 
     Object.keys(selectedLanguageData).forEach(function(key) {
-        document.getElementById(key).textContent = data[key];
+        document.getElementById(key).textContent = selectedLanguageData[key];
     });
 }
