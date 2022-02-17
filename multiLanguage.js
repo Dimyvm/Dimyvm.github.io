@@ -10,7 +10,11 @@ function getLanguage() {
         var doc = json;
         if (doc != null) {
             
-            
+         doc[lang].array.forEach(element => {
+    
+              Console.log(Object.keys(element));
+              
+          });  
           
           document.getElementById("About me title").textContent = doc[lang]["About me title"];
         
