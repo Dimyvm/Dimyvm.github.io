@@ -26,6 +26,10 @@ function pushJsonToHtml(){
     var selectedLanguageData = resevedJsondata[lang];
 
     Object.keys(selectedLanguageData).forEach(function(key) {
+        if(document.getElementById(key).nodeName == "<p>")
+        document.getElementById(key).innerText = selectedLanguageData[key];
+        else{
         document.getElementById(key).textContent = selectedLanguageData[key];
+        }
     });
 }
