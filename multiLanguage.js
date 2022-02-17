@@ -27,7 +27,7 @@ function pushJsonToHtml(){
 
     Object.keys(selectedLanguageData).forEach(function(key) {
         if(document.getElementById(key).nodeName == "<p>")
-        document.getElementById(key).innerText = selectedLanguageData[key];
+        document.getElementById(key).innerHTML = selectedLanguageData[key];
         else{
         document.getElementById(key).textContent = selectedLanguageData[key];
         }
