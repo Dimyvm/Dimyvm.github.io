@@ -10,10 +10,9 @@ function getLanguage() {
         var doc = json;
         if (doc != null) {
             
-         Object.keys(doc[lang]).forEach(function(key) {
-                
-                console.log( doc[lang][key]);
-                
+         var selectedLanguage = doc[lang];
+            Object.keys(selectedLanguage ).forEach(function(key) {
+                console.log( selectedLanguage[key]);
             });
           
           document.getElementById("About me title").textContent = doc[lang]["About me title"];
