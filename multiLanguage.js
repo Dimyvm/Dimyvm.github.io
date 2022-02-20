@@ -16,6 +16,8 @@ const template = `
             </div>
     `;
 
+/*Language */
+
 function getLanguage() {
     
     $.getJSON("languages.json", {format: "json"}, function (jsondata) {
@@ -32,6 +34,7 @@ function getLanguage() {
     });
 }
 
+
 function setLanguage(lang) {
     localStorage.setItem('language', lang);
     pushJsonToHtml();
@@ -45,6 +48,9 @@ function pushJsonToHtml(){
     Object.keys(selectedLanguageData).forEach(function(key) {
        var element = selectedLanguageData[key];
         if(typeof element == "object"){
+            element.forEach(([index, key, value]) =>{
+                console.log(index);
+            })
             console.log(element + "is een object");
         }
         else{
@@ -57,7 +63,7 @@ function pushJsonToHtml(){
     });
 }
 
-/*MessageBox* */
+/*MessageBox */
 
 function showMessageBox3sec(){
     setTimeout(function () {
