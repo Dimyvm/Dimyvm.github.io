@@ -48,9 +48,9 @@ function pushJsonToHtml(){
     Object.keys(selectedLanguageData).forEach(function(key) {
        var element = selectedLanguageData[key];
         if(typeof element == "object"){
-            element.forEach(([key, value], index) =>{
-                Console.log(index + " " + element[index]["Job title"])
-            })
+            element.forEach(([key, value]) =>{
+                Console.log(index + " " + element[index]["Job title"]);
+            });
             console.log(element + "is een object");
         }
         else{
