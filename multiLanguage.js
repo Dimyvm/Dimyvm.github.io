@@ -49,9 +49,9 @@ function pushJsonToHtml(){
        var element = selectedLanguageData[key];
         if(typeof element == "object"){
 
-            for(var i=0; selectedLanguageData[key][element].length ;i++){
-                Console.log(i + " " + selectedLanguageData[key][element][i]["Job title"]);
-            }
+//             for(var i=0; selectedLanguageData[key][element].length ;i++){
+//                 Console.log(i + " " + selectedLanguageData[key][element][i]["Job title"]);
+//             }
             console.log(element + "is een object");
         }
         else{
