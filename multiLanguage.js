@@ -73,5 +73,4 @@ function showMessageBox3sec(){
 
 function closeMessagBox(){
     document.querySelector(".messageBoxWrapper").remove();
-    resolve();
 }
