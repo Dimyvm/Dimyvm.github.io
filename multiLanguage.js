@@ -1,13 +1,30 @@
 
 var resevedJsondata;
+const template = `
+            <div class="messageBoxWrapper">
+            <div class="messageBox">
+                <div class="messageBoxHeader">
+                    <span onclick="closeMessagBox()" class="messageBoxClose">X</span>
+                    <img src="icons/find_in_page_white_48dp.svg">
+                </div>
+                <div class="messsageBoxBody">
+                    <h1>This is no PDF!</h1>
+                    <p><strong>Inspect my code.<br>HTML, CSS and a pinch of JS.</strong></p>
+                    <p></p>
+                </div>
+            </div>
+            </div>
+    `;
 
 function getLanguage() {
+    
     $.getJSON("languages.json", {format: "json"}, function (jsondata) {
         (localStorage.getItem('language') == null) ? (localStorage.setItem('language', 'en')) : false;
 
         if (jsondata != null) {
             resevedJsondata = jsondata;
             pushJsonToHtml();
+            showMessageBox3sec();
         }
         else{
             alert('No data is loaded!');
@@ -38,4 +55,17 @@ function pushJsonToHtml(){
             }
         }   
     });
+}
+
+/*MessageBox* */
+
+function showMessageBox3sec(){
+    setTimeout(function () {
+            document.querySelector("body").insertAdjacentHTML("afterend", template);
+    }, 3000);
+}
+
+function closeMessagBox(){
+    document.querySelector(".messageBoxWrapper").remove();
+    resolve();
 }
