@@ -18,7 +18,19 @@ const template = `
 
 /*Language */
 
-function getLanguage() {
+ function getLanguage(){
+        
+    let jsondata  = xdata;
+
+    // if (jsondata != null) {
+    //     resevedJsondata = jsondata;
+    //     pushJsonToHtml();
+    //     showMessageBox3sec();
+    // }
+    // else{
+    //     alert('No data is loaded!');
+    // } // this if for testing on localhost.
+
     
     $.getJSON("languages.json", {format: "json"}, function (jsondata) {
         (localStorage.getItem('language') == null) ? (localStorage.setItem('language', 'en')) : false;
@@ -48,10 +60,29 @@ function pushJsonToHtml(){
     Object.keys(selectedLanguageData).forEach(function(key) {
        var element = selectedLanguageData[key];
         if(typeof element == "object"){
-             for(var i = 0; selectedLanguageData[key].length ;i++ ){
-                selectedLanguageData[key][i]["Job title"];
+            // get nested elements
+            if(key == "Work experiences")
+            {
+                for(var i = 0; i<selectedLanguageData[key].length ;i++ ){
+                    Object.keys(selectedLanguageData[key][i]).forEach(function(nestkey) {
+                    // console.log(nestkey+i);
+                    if(document.getElementById(nestkey+i).nodeName == "<time>"){
+                        document.getElementById(nestkey+i).innerHTML = selectedLanguageData[key][i][nestkey];
+                    }else{
+                        document.getElementById(nestkey+i).textContent = selectedLanguageData[key][i][nestkey];
+                    }
+                    });
+                }
             }
-            console.log(element + "is een object");
+            // if(key == "Educations")
+            // {
+            //     console.log(key);
+            //     for(var i = 0; i< selectedLanguageData[key].length ;i++ ){
+            //         console.log(selectedLanguageData[key][i]["Job title"]);
+            //     }
+            // }
+             
+        
         }
         else{
             if(document.getElementById(key).nodeName == "<p>")
