@@ -20,7 +20,7 @@ const template = `
 
  function getLanguage(){
         
-    let jsondata  = xdata;
+    //let jsondata  = xdata;
 
     // if (jsondata != null) {
     //     resevedJsondata = jsondata;
