@@ -156,6 +156,7 @@ page[size="A4"] {
   position: relative;
   padding: 0 12px 0 0;
   min-width: 65px;
+  max-width: 81px;
   font-size: 13.28px;
 }
 
